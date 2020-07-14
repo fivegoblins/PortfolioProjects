@@ -1,0 +1,211 @@
+.App {
+  background-color: darkgray;
+  height: 95vh;
+  width: 90%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+  .App {
+    flex-direction: column-reverse;
+  }
+}
+
+.qa-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .qa-div {
+    margin-top: -50px;
+  }
+}
+
+.ball {
+  background-color: #282c34;
+  width: 350px;
+  border-radius: 50%;
+  display: flex;
+  margin-top: 60px;
+  margin-right: 40px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at 50% 120%, #323232, #0a0a0a 80%, #000000 100%);
+}
+
+@media (max-width: 900px) {
+  .ball {
+    height: 240px;
+    margin-left: 37%;
+    padding-top: -100px;
+    padding-bottom: -90px;
+    width: 210px;
+    border-radius: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .ball {
+    display: none;
+  }
+}
+/*
+.ball:before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  bottom: 2.5%;
+  left: 5%;
+  opacity: 0.6;
+  height: 100%;
+  width: 90%;
+  background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+  -webkit-filter: blur(5px);
+  z-index: 2;
+}
+
+.ball:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50% rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 24%);
+  -webkit-transform: translateX(-80px) 
+  translateY(-90px) skewX(-20deg);
+  -moz-transform: translateX(-80px) translateY(-90px) skew(-20deg);
+  -o-transform: translateX(-80px) translateY(-90px) skew(-20deg);
+  transform: translateX(-80px) translateY(-90px) skew(-20deg);
+  -webkit-filter: blur(10px);
+}*/
+
+.ball .eight {
+  content: "8";
+  width: 110px;
+  height: 130px;
+  margin: 30px;
+  background: white;
+  border-radius: 50%;
+  -webkit-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -moz-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -ms-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  -o-transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  transform: translateX(68px) translateY(-60px) skewX(15deg) skewY(2deg);
+  
+}
+
+@media (max-width: 900px) {
+  .ball .eight {
+    height: 80px;
+    width: 80px;
+    margin-top: 90px;
+    margin-right: 105px;
+  }
+}
+
+.ball .eight:before {
+  content: "8";
+  display: block;
+  position: absolute;
+  text-align: center;
+  height: 80px;
+  width: 110px;
+  left: 50px;
+  margin-left: -50px;
+  top: 44px;
+  margin-top: -30px;
+  color: black;
+  font-family: Helvetica;
+  font-size: 110px;
+  line-height: 104px;
+}
+
+@media (max-width: 900px) {
+  .ball .eight:before {
+    font-size: 56px;
+    margin-left: -70px;
+    margin-top: -55px;
+  }
+}
+
+.ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50% rgba(20, 20, 20, 0.4), rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0) 50%);
+  -webkit-transform: rotateX(90deg) translateZ(-150px);
+  -moz-transform: rotateX(90deg) translateZ(-150px);
+  -ms-transform: rotateX(90deg) translateZ(-150px);
+  -o-transform: rotateX(90deg) translateZ(-150px);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+
+}
+
+.header {
+
+  text-align: center;
+  justify-content: center;
+  font: Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 80%;
+  font-size: 48px;
+  padding: 100px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.question-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+}
+
+.question-input {
+  width: 40%;
+  padding: 7px;
+  font-size: 13px;
+  border-radius: 7px;
+}
+
+.ask-button {
+  width: 20%;
+  border-radius: 7px;
+  padding: 4px;
+  margin-top: 18px;
+  margin-bottom: 30px;
+  font: Helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  background-color:#323232;
+  color: white;
+  box-shadow: 0px 1px;
+}
+
+.ask-button:hover{
+  background-color: rgb(0, 0, 5);
+}
+
+.answer {
+  margin: 30px 0;
+  color: white;
+  font-size: 24px;
+}
+
+.hidden {
+  color: darkgray;
+}
+

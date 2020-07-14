@@ -1,0 +1,30 @@
+
+	Java Classes for park reservation system
+	
+src classes
+src/main/java
+	PROJECTS.MODEL
+		Park.java
+		ParkDAO.java (interface)			
+		Campground.java
+		CampgroundDAO.java (interface)		
+		Campsite.java
+		CampsiteDAO.java (interface)		
+		Reservation.java
+		ReservationDAO.java (interface)
+			
+
+	PROJECTS.MODEL.JDBC
+		JDBCParkDAO.java
+		JDBCCampgroundDAO.java
+		JDBCCampsiteDAO.java
+		JDBCReservationDAO.java
+
+
+test classes
+src/test/java
+	PROJECTS.MODEL.JDBC
+		JDBCParkDAOIntegrationTest.java
+		JDBCCampgroundDAOIntegrationTest.java
+		JDBCCampsiteDAOIntegrationTest.java
+		JDBCReservationDAOIntegrationTest.java
