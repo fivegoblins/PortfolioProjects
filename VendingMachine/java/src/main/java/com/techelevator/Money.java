@@ -13,7 +13,9 @@ public class Money {
 		return this.moneyRemaining;
 	}
 	
-
+	public double resetMoneyProvided() {
+		return this.moneyProvided = this.moneyRemaining;
+	}
 	public double moneyRemainingAfterPurchase(double price) {
 		return this.moneyRemaining = (moneyProvided - price);
 	}

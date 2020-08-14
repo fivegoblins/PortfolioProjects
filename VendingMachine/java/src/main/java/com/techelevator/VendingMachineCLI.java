@@ -133,6 +133,8 @@ public class VendingMachineCLI {
 					
 					cashFlow.moneyRemainingAfterPurchase(slot.getPrice());
 					
+					cashFlow.resetMoneyProvided();
+					
 					auditLogger(slot.getItemName(), slot.getSlot(), cashFlow.getMoneyProvided(), cashFlow.getMoneyRemaining());
 					
 					System.out.println(slot.getItemName() + " $" + slot.getPrice()); 
